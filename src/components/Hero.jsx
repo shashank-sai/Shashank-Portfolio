@@ -123,7 +123,7 @@ export default function Hero() {
               {/* Portrait Photo Container */}
               <div className="relative w-full h-[380px] rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 group-hover:border-sky-500/40 transition duration-500">
                 <img
-                  src="/profile_photo.jpg"
+                  src={`${import.meta.env.BASE_URL}profile_photo.jpg`}
                   alt="Surampudi Shashank Sai"
                   className="w-full h-full object-cover object-center grayscale hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-700"
                 />

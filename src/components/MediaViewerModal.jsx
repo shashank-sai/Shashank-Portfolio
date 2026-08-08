@@ -46,7 +46,7 @@ export default function MediaViewerModal({ mediaItem, designs, onSelectMedia, on
             </video>
           ) : (
             <img
-              src={mediaItem.image}
+              src={`${import.meta.env.BASE_URL}${mediaItem.image.replace(/^\//, '')}`}
               alt={mediaItem.title}
               className="w-full max-h-[520px] object-contain object-center"
             />

@@ -63,7 +63,7 @@ export default function Projects() {
               {/* Card Header Banner */}
               <div className="relative h-52 overflow-hidden bg-slate-950">
                 <img
-                  src={project.image}
+                  src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
                   alt={project.title}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />

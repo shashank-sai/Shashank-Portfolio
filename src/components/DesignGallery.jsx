@@ -66,7 +66,7 @@ export default function DesignGallery() {
               {/* Media Preview Box */}
               <div className="relative h-56 overflow-hidden bg-slate-950">
                 <img
-                  src={item.image}
+                  src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`}
                   alt={item.title}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
